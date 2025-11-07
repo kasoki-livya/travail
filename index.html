@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Livya Kasoki — Portfolio</title>
+  <meta name="description" content="Portfolio de Livya Kasoki — Développeur web & mobile, Ingénieur en réseau." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">Livya Kasoki</a>
+      <nav id="nav" class="nav">
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="btn-nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Bonjour — je suis <span class="accent">Livya Kasoki</span></h1>
+          <p class="lead">Développeur web & mobile • Ingénieur en réseau</p>
+          <p>J’aide les entreprises à concevoir des applications robustes, performantes et scalables — du frontend mobile aux API backend, en passant par l’infrastructure réseau.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">Voir mes projets</a>
+            <a class="btn btn-outline" href="#contact">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-profile">
+            <div class="avatar" aria-hidden="true">LK</div>
+            <div>
+              <h3>Livya Kasoki</h3>
+              <p>Développeur web & mobile</p>
+              <p class="muted">Ingénieur en réseau</p>
+              <ul class="contact-list">
+                <li>Email: <a href="mailto:livya@example.com">livya@example.com</a></li>
+                <li>LinkedIn: <a href="#" target="_blank" rel="noopener">linkedin.com/in/livya</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>À propos</h2>
+      <p>Je conçois et développe des applications web (React, Vue) et mobiles (Flutter, React Native) avec une attention particulière pour l’expérience utilisateur, la performance et la sécurité réseau. J’ai de l’expérience en conception d’API, déploiement cloud, et optimisation de réseaux pour environnements critiques.</p>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projets sélectionnés</h2>
+      <div class="grid projects-grid">
+        <article class="project">
+          <h3>App de gestion scolaire</h3>
+          <p>Application mobile & web pour gérer inscriptions, notes et communication parents — Flutter + .NET Core + MySQL.</p>
+          <a class="link" href="#">Voir le code / démo</a>
+        </article>
+
+        <article class="project">
+          <h3>Plateforme de location</h3>
+          <p>Solution de réservation et facturation pour location de véhicules — React + Node.js + Postgres.</p>
+          <a class="link" href="#">Voir le code / démo</a>
+        </article>
+
+        <article class="project">
+          <h3>Surveillance réseau</h3>
+          <p>Implémentation d’un système de surveillance sans-fil distribué pour campus universitaire.</p>
+          <a class="link" href="#">Étude</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Compétences</h2>
+      <div class="skills">
+        <ul class="skill-list">
+          <li>Frontend: HTML, CSS, JavaScript, React, Vue</li>
+          <li>Mobile: Flutter, React Native</li>
+          <li>Backend: Node.js, .NET Core, REST & GraphQL</li>
+          <li>Bases de données: MySQL, PostgreSQL</li>
+          <li>Réseau: TCP/IP, VLAN, Wi-Fi planning, sécurité réseau</li>
+          <li>DevOps: Docker, CI/CD, déploiement cloud</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>Envoyez-moi un message — je réponds rapidement.</p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          Nom
+          <input type="text" name="name" id="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" id="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" id="message" rows="5" required></textarea>
+        </label>
+
+        <button type="submit" class="btn">Envoyer</button>
+        <p id="form-status" class="muted" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Livya Kasoki — Développeur web & mobile</p>
+      <nav class="footer-nav">
+        <a href="#hero">Haut</a>
+        <a href="#projects">Projets</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
